@@ -14,7 +14,7 @@ $(document).ready(function() { // Starting up the jQuery
   function callWikipedia(){ // Calling API
     var q = $('#query').val(); // Allows to commit searches related to the users word
     var url = "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch="+q+"&callback=?";
-    $.ajax({ // As well as using the Ajax call towards the Wikipedia API
+    $.getJSON({ // As well as using the Ajax call towards the Wikipedia API
       url:url,
       type: 'POST', // is a HTTP Method (just like the get request, used in the Weather API)  it supplies extra data from the browser itself to the server in the message body.
       dataType: 'jsonp',
