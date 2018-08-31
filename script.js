@@ -1,4 +1,4 @@
-alert(" Warning: Getting ready to search...")
+alert("Warning: Getting ready to search...")
 $(document).ready(function() { // Starting up the jQuery
   // Calling the class of the word form but targeting the actual sumbit button or the "search" 
   $('.form').submit(function(){
